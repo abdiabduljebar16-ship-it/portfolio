@@ -51,6 +51,15 @@ a {
 .hero h2 {
     margin: 1rem;
 }
+.about {
+    margin: 1rem;
+}
+.about h2 {
+    text-align: center;
+}
+.about p {
+    margin: 1rem 0rem;
+}
 @media( min-width: 768px){
     .homeBar {
         display: none;
@@ -74,6 +83,13 @@ a {
     }
     .hero h2 {
         font-size: 2rem;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media( min-width: 1280px ){
