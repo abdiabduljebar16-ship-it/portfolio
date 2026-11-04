@@ -1,0 +1,51 @@
+* {
+    box-sizing: content-box;
+    font-family: 'inter', sans-serif;
+    margin: 0;
+}
+header {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 0.6fr 1.4fr;
+    padding: 1rem;
+    position: fixed;
+}
+.logo p a{
+    color: blue;
+}
+nav {
+   display: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.homeBar {
+    justify-self: end;
+}
+.homeBarButton {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.2rem;
+}
+@media( min-width: 768px){
+    .homeBar {
+        display: none;
+    }
+    .logo {
+        width: 8rem;
+    } 
+    nav {
+        display: flex;
+       justify-content: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        gap: 2.5rem;
+    }
+}
