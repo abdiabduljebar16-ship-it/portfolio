@@ -60,6 +60,33 @@ a {
 .about p {
     margin: 1rem 0rem;
 }
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.skill h2 {
+    text-align: center;
+}
+.skillContainer {
+} 
+.front {
+    margin-top: 1rem;
+}
+.tool {
+    margin-top: 1rem;
+}
+.current {
+    margin-top: 1rem;
+}
+.skillContainer button {
+    margin: 0.3rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
 @media( min-width: 768px){
     .homeBar {
         display: none;
@@ -84,7 +111,7 @@ a {
     .hero h2 {
         font-size: 2rem;
     }
-    .about {
+    .about, .skill {
         display: grid;
         grid-template-columns: 0.4fr 1fr;
         gap: 2rem;
