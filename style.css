@@ -197,6 +197,9 @@ footer {
 button:hover {
    background-color: var(--hover-accent);
 }
+a:hover {
+    color: yellow;
+}
 @media( min-width: 768px){
     .homeBar {
         display: none;
