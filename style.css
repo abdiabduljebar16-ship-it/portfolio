@@ -1,3 +1,14 @@
+:root {
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+  --text-main: #0F172A;
+  --text-secondary: #475569;
+  --primary-accent: #2563EB;
+  --hover-accent: #1D4ED8;
+  --border: #E2E8F0;
+  --shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --white: #FFFFFF;
+}
 * {
     box-sizing: content-box;
     font-family: 'inter', sans-serif;
@@ -11,6 +22,12 @@ header {
     grid-template-columns: 0.6fr 1.4fr;
     padding: 1rem;
     position: fixed;
+    background-color: var(--white);
+    border: 1px solid #E2E8F0;
+}
+main {
+    background-color: var(--background);
+    color: var(--text-secondary);
 }
 .logo p a{
     color: blue;
@@ -36,7 +53,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
     text-align: center;
     line-height: 1.3;
 }
@@ -45,8 +62,14 @@ a {
     gap: 2rem;
     margin: 1rem;
 }
+.heroButton a button {
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
 .hero h1 {
     margin: 1rem 1rem 0;
+    color: var(--text-main);
 }
 .hero h2 {
     margin: 1rem;
@@ -56,6 +79,7 @@ a {
 }
 .about h2 {
     text-align: center;
+    color: var(--text-main);
 }
 .about p {
     margin: 1rem 0rem;
@@ -69,15 +93,15 @@ a {
 }
 .skill h2 {
     text-align: center;
+    color: var(--text-main);
+    
 }
-.front {
+.front, .tool, .current {
     margin-top: 1rem;
-}
-.tool {
-    margin-top: 1rem;
-}
-.current {
-    margin-top: 1rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
 }
 .skillContainer button {
     margin: 0.3rem;
@@ -101,6 +125,7 @@ a {
 }
 .project h2{
     text-align: center;
+    color: var(--text-main);
 }
 .project p {
     margin: 0.2rem;
@@ -109,6 +134,13 @@ a {
 .project h3 {
     text-align: center;
     margin: 0.5rem;
+}
+.visitEthiopia, .toDo, .wheather {
+    margin: 1rem 0;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
 }
 .contactMethod {
     margin: 1rem;
@@ -122,12 +154,16 @@ a {
 }
 form {
     margin: 1rem 0;
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
 }
 label {
     display: block;
 }
 .contactMethod input, .contactMethod textarea{
-    width: 100%;
+    width: 95%;
     margin: 0.5rem 0;
 }
 .contactMethodButton {
@@ -135,21 +171,31 @@ label {
     justify-content: center;
     margin: 1rem;
 }
+.contactMethodButton button {
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
 .contact {
     margin: 1rem;
 }
 .contact h2 {
     text-align: center;
+    color: var(--text-main);
 }
 footer {
-    margin: 1rem;
+    margin: 1rem 0rem 0rem 0rem;
     text-align: center;
+    background: var(--white);
 }
 .email , .gitHub , .telegram {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin: 0.5rem 0;
+}
+button:hover {
+   background-color: var(--hover-accent);
 }
 @media( min-width: 768px){
     .homeBar {
@@ -188,6 +234,9 @@ footer {
     .projectGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    form input , form textarea{
+        border: 1px solid black;
     }
 }
 @media( min-width: 1280px ){
