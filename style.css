@@ -123,6 +123,12 @@ label {
 .contactMethod button {
 
 }
+.contact {
+    margin: 1rem;
+}
+.contact h2 {
+    text-align: center;
+}
 footer {
     margin: 1rem;
     text-align: center;
@@ -151,7 +157,7 @@ footer {
     .hero h2 {
         font-size: 2rem;
     }
-    .about, .skill, .project, .contactMethod {
+    .about, .skill, .project, .contactMethod, .contact{
         display: grid;
         grid-template-columns: 0.4fr 1fr;
         gap: 2rem;
